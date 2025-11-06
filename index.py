@@ -166,10 +166,29 @@ ex_dict["email"] = "anirudhhh637@gmail.com"
 #     print("no ok")
 
 
-input_amount = int(input("enter amount : "))
+# input_amount = int(input("enter amount : "))
 balance = 5000
 
-if(input_amount <= balance): print("Transaction successful")
-elif(input_amount > balance): print("Cannot transact more than availalbe balance")
-elif(input_amount == 0): print("Cannot withdraw 0")
-else: print("Enter valid amount")
+# if(input_amount <= balance): print("Transaction successful")
+# elif(input_amount > balance): print("Cannot transact more than availalbe balance")
+# elif(input_amount == 0): print("Cannot withdraw 0")
+# else: print("Enter valid amount")
+
+num1 = int(input("Enter num 1 : "))
+num2 = int(input("Enter num 2 : "))
+
+operator_inp = input("Enter operation : ")
+
+if(operator_inp == '+'): 
+    print("Result : ", num1 + num2)
+elif(operator_inp == '-'): 
+    print("Result : ", num1 - num2)
+elif(operator_inp == '*'): 
+    print("Result : ", num1 * num2)
+elif(operator_inp == '/'):
+    if(num1 > 0 & num2 > 0):
+        print("Result : ", num1 / num2)
+    elif(num1 == 0): 
+        print("0 cannot be divided")
+    elif(num2 == 0): 
+        print("Cannot divide by 0")
