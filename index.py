@@ -86,7 +86,7 @@ single = (4)
 
 # slicing tuple
 
-print(elem_tuple[1:4])
+# print(elem_tuple[1:4])
 
 # elem_tuple[0] = 10
 # print(elem_tuple) # TypeError
@@ -97,4 +97,80 @@ elem_tuple[0] = 10
 
 elem_tuple = tuple(elem_tuple)
 
-print(elem_tuple)
+# print(elem_tuple)
+
+ex_set = set([1,2,3,4]) # converting list to set
+
+# example_set = {[1,2,3,4]} # cannot store mutable datasets in set
+example_set = {1,2,2,4}
+
+# print(type(ex_set))
+# print(type(example_set))
+
+# print(ex_set)
+
+# for element in example_set:
+#     print(element)
+
+# A | B Union
+# A & B Intersection
+# A - B Difference
+# A ^ B Symmetric Difference
+
+# add()
+# update[...]
+# remove()
+# discard()
+# pop()
+# copy()
+# clear()
+
+
+li1 = [1,2,3,4,5,6,6,7]
+li_set = set(li1)
+
+# print("List : ", li1)
+# print("Set list : ", li_set)
+
+fs = frozenset([1,2,3,4,5])
+# print(fs)
+
+# print(3 in li1)
+
+ex_dict = {
+    "name": "Anirudh",
+    "age": 20,
+    "contact_info" : {
+        "country" : "India",
+        "city" : "Gwalior"
+    } 
+}
+ex_dict["email"] = "anirudhhh637@gmail.com"
+
+# del ex_dict -- remove element
+# get() -- get method
+
+# for element in ex_dict:
+#     print (f"{element} : {ex_dict[element]}")
+
+
+# print(ex_dict)
+
+
+# input_store = input("Enter name : ")
+# print("Input name : ", input_store)
+
+# if(input_store.lower() == 'admin'):
+#     print("ok")
+# else :
+#     print("no ok")
+
+
+input_amount = int(input("enter amount : "))
+balance = 5000
+
+if(input_amount <= balance): print("Transaction successful")
+elif(input_amount > balance): print("Cannot transact more than availalbe balance")
+elif(input_amount == 0): print("Cannot withdraw 0")
+else: print("Enter valid amount")
+
