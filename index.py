@@ -173,4 +173,3 @@ if(input_amount <= balance): print("Transaction successful")
 elif(input_amount > balance): print("Cannot transact more than availalbe balance")
 elif(input_amount == 0): print("Cannot withdraw 0")
 else: print("Enter valid amount")
-
