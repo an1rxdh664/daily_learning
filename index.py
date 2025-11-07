@@ -255,3 +255,7 @@ def kwargs_arg(**info):
 # kwargs_arg(name="Anirudh", age=20, email="anirudhhh637@gmail.com")
 
 
+def ar_sq(side):
+    return side**2
+
+print("Area of square : ", ar_sq(4))
