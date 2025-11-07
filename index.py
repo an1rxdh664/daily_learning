@@ -174,21 +174,84 @@ balance = 5000
 # elif(input_amount == 0): print("Cannot withdraw 0")
 # else: print("Enter valid amount")
 
-num1 = int(input("Enter num 1 : "))
-num2 = int(input("Enter num 2 : "))
+# num1 = int(input("Enter num 1 : "))
+# num2 = int(input("Enter num 2 : "))
 
-operator_inp = input("Enter operation : ")
+# operator_inp = input("Enter operation : ")
 
-if(operator_inp == '+'): 
-    print("Result : ", num1 + num2)
-elif(operator_inp == '-'): 
-    print("Result : ", num1 - num2)
-elif(operator_inp == '*'): 
-    print("Result : ", num1 * num2)
-elif(operator_inp == '/'):
-    if(num1 > 0 & num2 > 0):
-        print("Result : ", num1 / num2)
-    elif(num1 == 0): 
-        print("0 cannot be divided")
-    elif(num2 == 0): 
-        print("Cannot divide by 0")
+# if(operator_inp == '+'): 
+#     print("Result : ", num1 + num2)
+# elif(operator_inp == '-'): 
+#     print("Result : ", num1 - num2)
+# elif(operator_inp == '*'): 
+#     print("Result : ", num1 * num2)
+# elif(operator_inp == '/'):
+#     if(num1 > 0 & num2 > 0):
+#         print("Result : ", num1 / num2)
+#     elif(num1 == 0): 
+#         print("0 cannot be divided")
+#     elif(num2 == 0): 
+#         print("Cannot divide by 0")
+
+
+# for i in range(10,0,-1):
+#     print(i)
+
+count = 1
+# while(count<5):
+#     print(count)
+#     count+=1
+
+
+# while True: print("Anirudh")
+
+
+# for i in range(1,10):
+#     if i==3: continue
+#     if i==4: pass
+#     if i==6: break
+#     print(i)
+
+
+user_choice = True
+
+# while(user_choice):
+#     user_input = int(input("Enter the number : "))
+    
+#     for i in range(1,10):
+#         print(f"{user_input} x {i} = {user_input * i}")
+    
+
+#     user_input = int(input("Do you want to print another table (1/0): "))
+
+#     if(user_input == 1): user_choice = True
+#     elif(user_input == 0): 
+#         user_choice = False
+#         break
+
+
+def print_hello():
+    print("Hello world")
+
+
+# print_hello()
+
+
+def add(a,b):
+    return a + b
+
+
+# print(add(10,12))
+
+
+def star_args(*marks):
+    print("Marks : ", marks)
+
+# star_args(10,20,30,40,50)
+
+def kwargs_arg(**info):
+    print("Information : ", info)
+
+# kwargs_arg(name="Anirudh", age=20, email="anirudhhh637@gmail.com")
+
+
