@@ -258,4 +258,102 @@ def kwargs_arg(**info):
 def ar_sq(side):
     return side**2
 
-print("Area of square : ", ar_sq(4))
+# print("Area of square : ", ar_sq(4))
+
+
+# Creating object
+class myClass():
+    pass
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+
+car1 = Car("xyz", "abc")
+
+# print(car1.brand)
+# print(car1.model)
+
+# class attribute vs object attribute
+
+class college:
+    colleges = "ITM" # Class attribute
+
+    def __init__(self, name):
+        self.name = name # Object attribute
+
+    def info(self):
+        print(f"Name : {self.name}\nCollege : {self.colleges}")
+
+
+coll = college("Anirudh")
+
+# print(coll.name)
+# print(coll.colleges)
+
+# coll.info()
+
+class frt:
+    def __init__(self, name):
+        self.fruit_name = name
+
+    def __str__(self):
+        return f"{self.fruit_name} : Name"
+    
+f1 = frt("Apple")
+
+# print(f1)
+
+
+# BHOT ADVANCED CONCEPT -- OOOOOOOOOOOOOOOP
+
+
+# Encapsulation
+
+
+class bankAccount:
+    def __init__(self, balance):
+        self.acc_balance = balance
+
+    def deposit(self,amount):
+        self.acc_balance += amount
+
+    def show_balance(self):
+        print(f"Total Balance : {self.acc_balance}")
+
+    def withdraw_balance(self, with_amount):
+        self.acc_balance -= with_amount
+
+user = bankAccount(5000)
+
+# print(user)
+
+user.show_balance()
+
+user.deposit(500)
+
+user.show_balance()
+
+user.withdraw_balance(1000)
+
+user.show_balance()
+
+
+def print_table(num):
+    for i in range(1,10):
+        print(f"{num} x {i} = {num * i}")
+
+# print_table(5)
+
+
+def reverse_num(num):
+    rev = 0
+    while(num != 0):
+        rev = (rev * 10) + (num % 10)
+        num //= 10
+
+    print(rev)
+
+reverse_num(123)
