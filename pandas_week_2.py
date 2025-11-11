@@ -42,10 +42,4 @@ df1 = pd.read_excel("Country-Code.xlsx")
 
 df_new = pd.merge(df, df1, how="left")
 
-print(df1['Country Code'].unique()) # prints unique columns 
-
-# 
-# Na
-# Null
-# NaN
-# duplicate
+print(df1['Country Code'].unique()) # prints unique columns
