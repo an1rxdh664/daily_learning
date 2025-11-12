@@ -42,4 +42,23 @@ df1 = pd.read_excel("Country-Code.xlsx")
 
 df_new = pd.merge(df, df1, how="left")
 
-print(df1['Country Code'].unique()) # prints unique columns
+# print(df1['Country Code'].unique()) # prints unique columns
+
+# print(df1['Country'].nunique())
+
+# 1 load data
+# 2 analyze the data
+    # rows / columns
+    # Na
+    # NaN  
+    # Na and NaN h toh random data fill karde, lekin zyada hai toh drop krde
+
+    # duplicate - if duplicate then drop
+
+# print(df_new['Country'] == 'India')
+
+# print(df[df['City'] == 'New Delhi'])
+
+print(df[(df['City'] == 'Ghaziabad') & (df['Rating text'] == 'Poor')])
+
+# print(df[df[df['City'] == 'Ghaziabad'] == 'Rating text'] == 'Poor')
