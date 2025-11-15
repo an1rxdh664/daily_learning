@@ -97,11 +97,11 @@ new_data = {
 
 # Area Plot
 
-x = np.arange(1,6)
-y1 = np.array([10,20,30,25,15])
-y2 = np.array([5,15,25,20,10])
+# x = np.arange(1,6)
+# y1 = np.array([10,20,30,25,15])
+# y2 = np.array([5,15,25,20,10])
 
-plt.figure(figsize=(6,4))
-plt.stackplot(x, y1, y2, labels=['Product A', 'Product B'])
-plt.legend(loc='upper left')
-print(plt.show())
+# plt.figure(figsize=(6,4))
+# plt.stackplot(x, y1, y2, labels=['Product A', 'Product B'])
+# plt.legend(loc='upper left')
+# print(plt.show())
