@@ -1,0 +1,1 @@
+print(example_tuple[0:4])

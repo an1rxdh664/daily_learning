@@ -330,15 +330,15 @@ user = bankAccount(5000)
 
 # print(user)
 
-user.show_balance()
+# user.show_balance()
 
-user.deposit(500)
+# user.deposit(500)
 
-user.show_balance()
+# user.show_balance()
 
-user.withdraw_balance(1000)
+# user.withdraw_balance(1000)
 
-user.show_balance()
+# user.show_balance()
 
 
 def print_table(num):

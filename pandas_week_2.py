@@ -59,6 +59,49 @@ df_new = pd.merge(df, df1, how="left")
 
 # print(df[df['City'] == 'New Delhi'])
 
-print(df[(df['City'] == 'Ghaziabad') & (df['Rating text'] == 'Poor')])
+# print(df[(df['City'] == 'Ghaziabad') & (df['Rating text'] == 'Poor')])
 
 # print(df[df[df['City'] == 'Ghaziabad'] == 'Rating text'] == 'Poor')
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+new_data = {
+    'Category' : ['Electronics', 'Clothing', 'Groceries', 'Toys', 'Furniture'],
+    'Revenue' : [55000, 32000, 21000, 15000, 40000],
+    'Profit' : [12000, 7000, 5000, 2000, 9000],
+    'Quantity' : [120, 230, 300, 150, 100]
+}
+
+# Line Plot - To visualize trend over time or continuous data.
+# Why : shows how values change squentially
+
+# plt.figure(figsize=(6,4))
+# # print(plt.plot(new_data['Category'], new_data['Revenue']))
+
+# # plt.show()
+
+# sns.barplot(x='Category', y='Revenue', data=new_data)
+# plt.title("Seaborn Bar Plot - Revenue by Category")
+
+# print(plt.show())
+
+# Histogram
+# plt.figure(figsize=(6,4))
+# plt.hist(new_data['Revenue'], bins=10, color='orange', edgecolor='black')
+# plt.title("Histogram")
+# plt.xlabel('Revenue')
+# plt.ylabel('Frequency')
+# print(plt.show())
+
+
+# Area Plot
+
+# x = np.arange(1,6)
+# y1 = np.array([10,20,30,25,15])
+# y2 = np.array([5,15,25,20,10])
+
+# plt.figure(figsize=(6,4))
+# plt.stackplot(x, y1, y2, labels=['Product A', 'Product B'])
+# plt.legend(loc='upper left')
+# print(plt.show())
